@@ -1,0 +1,29 @@
+{
+  "name": "webrtc",
+  "version": "1.0.0",
+  "description": "A realtime webRTC video streaming project.",
+  "main": "app.js",
+  "scripts": {
+    "hub": "signalhub listen -p 8080 --key=localhost-key.pem --cert=localhost.pem",
+    "start": "budo app.js:bundle.js --ssl --cert=localhost.pem --key=localhost-key.pem"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johann-su/webRTC_live_cam.git"
+  },
+  "keywords": [
+    "webRTC",
+    "Livestream"
+  ],
+  "author": "Johann Hanke, Johann Süß",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/johann-su/webRTC_live_cam/issues"
+  },
+  "homepage": "https://github.com/johann-su/webRTC_live_cam#readme",
+  "dependencies": {
+    "budo": "^11.6.3",
+    "signalhub": "^4.9.0",
+    "simple-peer": "^9.6.2"
+  }
+}
